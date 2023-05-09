@@ -15,4 +15,4 @@ Salt installed on the system.
 
 Sudo/Administrator rights on the target PC.
 
-Windows requires Pro/Enterprice version for Group Policy changes, you can probably? have it work on other versions by manually installing gpedit.msc beforehand but ¯\\_(ツ)_/¯
+Windows requires Pro/Enterprice version for Group Policy changes, you can probably? have it work on other versions by manually installing gpedit.msc beforehand but ¯\\__(ツ)__/¯
