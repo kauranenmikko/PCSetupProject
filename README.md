@@ -15,7 +15,7 @@ Salt installed on the system.
 
 Sudo/Administrator rights on the target PC.
 
-Windows might require Pro/Enterprice version.
+Windows might require Pro/Enterprice version. Also this will be tested and done on Windows 10, 11 probably works (if the packages are available) but there might be issues with registry/Group Policies.
 
 ## Changes made
 
@@ -26,6 +26,8 @@ Steam
 Blender
 VirtualBox
 Wine (Linux, windows "emulation" for games)
+FireFox
+
 
 ```
 
@@ -42,7 +44,7 @@ Opens port 22 for SSH
 
 #### Windows
 ```
-Disabled Cortana
+Disable Cortana
 Disable telemetry
 Disable fast start-up
 Disable windows tips
