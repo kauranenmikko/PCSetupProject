@@ -102,6 +102,8 @@ Now it's time to move the folder and it's contents into the proper location. For
 
 In PowerShell, run the command `salt-call --local state.apply PCSetup` and wait, depending on device and internet speed it might take a while. You will see some of the programs open up their installers or autorun after their installation. After the installation is complete, you will see a report on the actions performed.
 
+______
+
 ### Debian
 
 Debian has next to no prerequisites as far as this installation is concerned.
