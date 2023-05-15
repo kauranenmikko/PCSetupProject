@@ -3,13 +3,11 @@ A small salt project to setup a baseline PC for Linux and Windows.
 
 ## What is the aim
 
-Debian comes with pretty much nothing installed. 
-
-Windows comes with _too much_ crap installed.
-
-This is a small personal project to install some software on debian, while also attempting to clean up windows settings and remove some unwanted software.
+This is a small personal project to install some software via salt on debian and windows, while also attempting to clean up windows settings and remove some unwanted software.
 
 This is _NOT_ meant as a absolute way to remove every bad thing from Windows, but more of a proof on concept type personal project.
+
+The file can be used either locally or applied to slaves. 
 
 ## Prerequisites
 
