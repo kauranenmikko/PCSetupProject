@@ -156,4 +156,4 @@ https://winhelp2002.mvps.org/hosts.txt
 dpkg man page
 
 
-* Technically the ufw firewall rules aren't _fully_ idempotent but I would rather make them not change firewall rules if any exist for the port/protocol combination than change already made rules. Your PC, your environment.
+* *Technically the ufw firewall rules aren't _fully_ idempotent but I would rather make them not change firewall rules if any exist for the port/protocol combination than change already made rules. Your PC, your environment.
