@@ -57,7 +57,9 @@ Opens following ports/protocol
 4505/tcp
 4506/tcp
 
-Appends a lot of stuff to your hosts file. Hosts file included in the PCSetup folder obtained from https://winhelp2002.mvps.org/hosts.txt 
+Hosts file
+Appends a lot of stuff to your hosts file. Sets multiple domains to 0.0.0.0
+Hosts file included in the PCSetup folder obtained from https://winhelp2002.mvps.org/hosts.txt 
 ```
 
 #### Windows
@@ -78,7 +80,9 @@ Turn off the advertising ID
 Registry Changes
 Disable fast start-up
 
-Appends a lot of stuff to your hosts file. Hosts file included in the PCSetup folder obtained from https://winhelp2002.mvps.org/hosts.txt 
+Hosts file
+Appends a lot of stuff to your hosts file. Sets multiple domains to 0.0.0.0
+Hosts file included in the PCSetup folder obtained from https://winhelp2002.mvps.org/hosts.txt 
 ```
 
 ## Instructions
