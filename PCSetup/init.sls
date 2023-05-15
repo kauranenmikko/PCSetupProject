@@ -57,6 +57,14 @@ packages.required:
       - 7zip
       - git
       - putty
+      
+# Host file contents from https://winhelp2002.mvps.org/hosts.txt. 
+
+/etc/hosts:
+  file:
+    - append
+    - sources:
+      - salt://PCSetup/hosts
 
 # The actual solution to below mess would be to pass each package as a string/object to winget un/install, or toss it all in a seperate shell file
 # Also for some reason && chaining of commands doesn't seem to work in PowerShell
@@ -110,7 +118,9 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power:
 # Host file contents from https://winhelp2002.mvps.org/hosts.txt 
 
 C:\Windows\System32\drivers\etc\hosts:
-  file.managed:
-    - source: salt://PCSetupProject/hosts
+  file:
+    - append
+    - sources: 
+      - salt://PCSetup/hosts
 
 {% endif %}
