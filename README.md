@@ -56,10 +56,13 @@ Opens following ports/protocol
 80/tcp
 4505/tcp
 4506/tcp
+
+Appends a lot of stuff to your hosts file. Hosts file included in the PCSetup folder obtained from https://winhelp2002.mvps.org/hosts.txt 
 ```
 
 #### Windows
 ```
+GPO Changes
 Disable Windows tips
 Deny local login
 Turn off cloud optimized content
@@ -71,7 +74,11 @@ Disable OneSettings Downloads
 Disable "show feedback notifications"
 Turn off hybrid sleep (plugged in)
 Turn off the advertising ID
-Changes hosts file to included hosts file. Obtained from https://winhelp2002.mvps.org/hosts.txt 
+
+Registry Changes
+Disable fast start-up
+
+Appends a lot of stuff to your hosts file. Hosts file included in the PCSetup folder obtained from https://winhelp2002.mvps.org/hosts.txt 
 ```
 
 ## Instructions
