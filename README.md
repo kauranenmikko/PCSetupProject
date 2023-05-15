@@ -127,7 +127,6 @@ If you get a error here, likely something akin to `No matching sls found for PCS
 You can (and possibly should) remove the salt-minion or salt-master installations if you have no further use for them.
 
 
-______
 
 
 ## Sources used:
