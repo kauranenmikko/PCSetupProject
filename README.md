@@ -111,7 +111,8 @@ Install salt
 sudo apt-get update && sudo apt-get install salt-minion
 ```
 
-You can test the installation with ```
+You can test the installation with 
+```
 salt-call --version
 ```
 
