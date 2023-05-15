@@ -5,7 +5,7 @@ A small salt project to setup a baseline PC for Linux and Windows.
 
 This is a small personal project to install some software via salt on debian and windows, while also attempting to clean up windows settings and remove some unwanted software.
 
-This is _NOT_ meant as a absolute way to remove every bad thing from Windows, but more of a proof on concept type personal project.
+This is *NOT* meant as a absolute way to remove every bad thing from Windows, but more of a proof on concept type personal project.
 
 The file can be used either locally or applied to slaves. 
 
@@ -108,15 +108,9 @@ ______
 
 Debian has next to no prerequisites as far as this installation is concerned.
 
-Install salt 
-```
-sudo apt-get update && sudo apt-get install salt-minion
-```
+Install salt `sudo apt-get update && sudo apt-get install salt-minion`
 
-You can test the installation with 
-```
-salt-call --version
-```
+You can test the installation with `salt-call --version`
 
 Download the files from this repo. 
 
@@ -131,3 +125,31 @@ If you get a error here, likely something akin to `No matching sls found for PCS
 ## After installation and salt-call run
 
 You can (and possibly should) remove the salt-minion or salt-master installations if you have no further use for them.
+
+
+______
+
+
+## Sources used:
+
+https://terokarvinen.com/2018/configure-windows-and-linux-with-salt-jinja-if-else-and-grains/
+
+https://stackoverflow.com/questions/41479482/how-do-i-allow-a-salt-stack-formula-to-run-on-only-certain-operating-system-vers
+
+https://docs.saltproject.io/en/latest/topics/development/conventions/formulas.html#abstracting-static-defaults-into-a-lookup-table
+
+https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html
+
+https://wiki.debian.org/Steam
+
+https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/
+
+https://docs.saltproject.io/en/latest/ref/states/all/salt.states.reg.html
+
+https://learn.microsoft.com/en-us/windows/package-manager/winget/
+
+https://docs.saltproject.io/en/latest/ref/states/all/salt.states.win_lgpo.html
+
+https://winhelp2002.mvps.org/hosts.txt
+
+dpkg man page
