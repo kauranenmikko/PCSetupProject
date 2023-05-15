@@ -9,6 +9,8 @@ This is *NOT* meant as a absolute way to remove every bad thing from Windows, bu
 
 The file can be used either locally or applied to slaves. 
 
+Fully Idempotent.
+
 ## Prerequisites
 
 Salt installed on the system. (Links below)
@@ -126,7 +128,7 @@ If you get a error here, likely something akin to `No matching sls found for PCS
 
 You can (and possibly should) remove the salt-minion or salt-master installations if you have no further use for them.
 
-
+For testing and salt master-minion compability on Linux we open the ports 4505 and 4506 on ufw. You don't want to leave them open for no reason, so `sudo ufw deny 4505/tcp && sudo ufw deny 4506/tcp` to deny the ports instead.sud
 
 
 ## Sources used:
