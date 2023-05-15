@@ -7,7 +7,9 @@ Debian comes with pretty much nothing installed.
 
 Windows comes with _too much_ crap installed.
 
-The idea is to make a single script/file that will setup either a debian or a windows installation with programs that I will use, while also cleaning up unneeded stuff.
+This is a small personal project to install some software on debian, while also attempting to clean up windows settings and remove some unwanted software.
+
+This is _NOT_ meant as a absolute way to remove every bad thing from Windows, but more of a proof on concept type personal project.
 
 ## Prerequisites
 
@@ -15,45 +17,61 @@ Salt installed on the system.
 
 Sudo/Administrator rights on the target PC.
 
-Windows might require Pro/Enterprice version. Also this will be tested and done on Windows 10, 11 probably works (if the packages are available) but there might be issues with registry/Group Policies.
+Windows might require Pro/Enterprice version. Tested on Windows 10 and Windows 11.
 
 ## Changes made
 
 ### Installed software:
 
+#### Linux
 ```
 Steam
 Blender
-VirtualBox
 Wine (Linux, windows "emulation" for games)
-FireFox
+micro
+ufw
+```
 
-
+#### Windows
+```
+Notepad++
+GIMP
+Firefox
+Discord
+GOG Galaxy
+blender
+7zip
+git
+PuTTY
 ```
 
 ### Other changes
 
 #### Linux
-
 ```
-Enables UFW
-Opens port 22 for SSH
+ufw:
+Opens following ports/protocol
 
-
+22/tcp
+80/tcp
+4505/tcp
+4506/tcp
 ```
 
 #### Windows
 ```
-Disable Cortana
-Disable telemetry
-Disable fast start-up
-Disable windows tips
-Disable Cloud Content
-Disable MS ""consumer experience""
-Disable MS Store
-Uninstall pre-installed bloatware/games
-Install PowerToys
-
+Disable Windows tips
+Deny local login
+Turn off cloud optimized content
+Disable drivers with Windows Updates
+Disable the use of biometrics
+Set minimum password length
+Make sure the setting for "store passwords using reversible encryption" is set to Disabled
+Disable OneSettings Downloads
+Disable "show feedback notifications"
+Turn off hybrid sleep (plugged in)
+Turn off the advertising ID
+Changes hosts file to included hosts file. Obtained from https://winhelp2002.mvps.org/hosts.txt 
 ```
 ## Instructions
 
