@@ -61,7 +61,7 @@ packages.required:
 # The actual solution to below mess would be to pass each package as a string/object to winget un/install, or toss it all in a seperate shell file
 # Also for some reason && chaining of commands doesn't seem to work in PowerShell
 
-winget install "Notepad++.Notepad++"":
+winget install "Notepad++.Notepad++":
   cmd.run
 
 winget install "GIMP.GIMP":
