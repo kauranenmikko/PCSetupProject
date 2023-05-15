@@ -106,7 +106,10 @@ In PowerShell, run the command `salt-call --local state.apply PCSetup` and wait,
 
 Debian has next to no prerequisites as far as this installation is concerned.
 
-Install salt `sudo apt-get update && sudo apt-get install salt-minion`
+Install salt 
+```
+sudo apt-get update && sudo apt-get install salt-minion
+```
 
 You can test the installation with `salt-call --version`
 
@@ -116,7 +119,7 @@ The folder PCSetup and it's contents need to be copied to /srv/salt/ directory.
 
 From terminal, cd your way the downloaded folder. Copy the PCSetup folder and it's contents into /srv/salt/ `sudo cp -R PCSetup /srv/salt/`
 
-Now you can run it with ```sudo salt-call --local state.apply PCSetup```. This can take a while (10+ minutes) and the finished output can be _very long_ due to wine and blender combined installing something closer to a 1000 different packages and dependencies.
+Now you can run it with `sudo salt-call --local state.apply PCSetup`. This can take a while (10+ minutes) and the finished output can be _very long_ due to wine and blender combined installing something closer to a 1000 different packages and dependencies.
 
 If you get a error here, likely something akin to `No matching sls found for PCSetup in env base` you're missing either the directory from /srv/salt/ (so it has only the init.sls and hosts files), the directory contents (PCSetup exists but is empty), or they're both missing from that location (_or_ you've changed the default salt base location)
 
