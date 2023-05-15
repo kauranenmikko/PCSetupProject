@@ -51,7 +51,6 @@ PuTTY
 ```
 ufw:
 Opens following ports/protocol
-
 22/tcp
 80/tcp
 4505/tcp
