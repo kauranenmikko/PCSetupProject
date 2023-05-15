@@ -9,7 +9,7 @@ This is *NOT* meant as a absolute way to remove every bad thing from Windows, bu
 
 The file can be used either locally or applied to slaves. 
 
-Fully Idempotent.
+Fully* Idempotent. 
 
 ## Prerequisites
 
@@ -154,3 +154,6 @@ https://docs.saltproject.io/en/latest/ref/states/all/salt.states.win_lgpo.html
 https://winhelp2002.mvps.org/hosts.txt
 
 dpkg man page
+
+
+* Technically the ufw firewall rules aren't _fully_ idempotent but I would rather make them not change firewall rules if any exist for the port/protocol combination than change already made rules. Your PC, your environment.
